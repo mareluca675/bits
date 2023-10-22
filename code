@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    ifstream fin("bits.in");
+    ofstream fout("bits.out");
+    
+    signed long long a, b, n, i = 1, baza = 0, p = 1, nrcif = 0, bit;
+    
+    fin >> a >> n;
+    
+    while(i <= n)
+    {
+        fin >> b;
+        
+        fout << ((a >> b) & 1);
+        
+        i ++;
+    }
+    
+    
+    return 0;
+}
